@@ -1,0 +1,73 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: rgb(245, 245, 245);
+  padding: 1em;
+  height: 100vh;
+}
+
+@media only screen and (max-width: 600px) {
+  .content {
+    grid-template-columns: 1fr;
+  }
+}
+
+.game-board {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 100%;
+  row-gap: 5px;
+  column-gap: 5px;
+  background-color: lightgray;
+  padding: .25em;
+}
+
+.game-board__spot {
+  background: rgb(254, 252, 252);
+  border-radius: .25em;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  cursor: pointer;
+  height: 100px;
+}
+
+.game-board__spot:hover {
+  background: rgb(245, 245, 245);
+}
+
+.game-info {
+  text-align: center;
+}
+
+.player-turn {
+  padding: .5em 0;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.player1-wins, .player2-wins {
+  padding: .5em 0;
+  font-size: 24px;
+}
+
+.game-info__restart-btn {
+  cursor: pointer;
+  min-width: 300px;
+  padding: .5em;
+  border-radius: .5em;
+  border: none;
+  background: black;
+  color: rgb(245, 245, 245);
+}

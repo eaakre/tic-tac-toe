@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="main.js" defer></script>
+
+  <title>Tic Tac Toe</title>
+</head>
+<body>
+  <header class="header">
+
+  </header>
+  <main class="content">
+    <section class="game">
+      <div class="game-board">
+        <button class="game-board__spot game-board__spot_win" id="spot-1" onclick="playMove(spot1)"></button>
+        <button class="game-board__spot game-board__spot_win" id="spot-2" onclick="playMove(spot2)"></button>
+        <button class="game-board__spot game-board__spot_win" id="spot-3" onclick="playMove(spot3)"></button>
+        <button class="game-board__spot game-board__spot_win" id="spot-4" onclick="playMove(spot4)"></button>
+        <button class="game-board__spot game-board__spot_win" id="spot-5" onclick="playMove(spot5)"></button>
+        <button class="game-board__spot game-board__spot_win" id="spot-6" onclick="playMove(spot6)"></button>
+        <button class="game-board__spot game-board__spot_win" id="spot-7" onclick="playMove(spot7)"></button>
+        <button class="game-board__spot game-board__spot_win" id="spot-8" onclick="playMove(spot8)"></button>
+        <button class="game-board__spot game-board__spot_win" id="spot-9" onclick="playMove(spot9)"></button>
+      </div>
+    </section>
+    <section class="game-info">
+      <div class="player-turn" id="player-turn">Player 1's Turn</div>
+      <div class="player1-wins" >Player 1: <span id="player1-wins" >0</span> Wins</div>
+      <div class="player2-wins" >Player 2: <span id="player2-wins" >0</span> Wins</div>
+      <button class="game-info__restart-btn" onclick="restartGame()">Start New Game</button>
+    </section>
+  </main>
+  <footer class="footer">
+
+  </footer>
+</body>
+</html>
